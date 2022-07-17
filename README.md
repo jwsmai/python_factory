@@ -108,4 +108,11 @@ print(math.isnan(c))
 ```
 
 ### 相关链接
+
 - https://python3-cookbook.readthedocs.io/zh_CN/latest/c03/p07_infinity_and_nan.html
+
+## 使用[Databricks SQL Connector](databricks/databricks_utils.py)查询databricks数据
+
+### 相关链接
+
+- https://docs.databricks.com/dev-tools/python-sql-connector.html
