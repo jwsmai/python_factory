@@ -19,7 +19,7 @@
 
 代码：
 
-```shell
+```python
 @logger.catch
 def my_function(x, y, z):
     # An error? It's caught anyway!
@@ -57,20 +57,20 @@ loguru日志太多时，可以根据不同的策略保存日志
 
 - 每500MB创建一个文件
 
-```shell
+```python
 logger.add('runtime_{time}.log', rotation="500 MB")
 ```
 
 - 每周创建一个日志
 
-```shell
+```python
 logger.add('runtime_{time}.log', rotation='1 week')
 
 ```
 
 - 每天零点创建日志
 
-```shell
+```python
 logger.add('runtime_{time}.log', rotation='00:00')
 ```
 
@@ -78,3 +78,29 @@ logger.add('runtime_{time}.log', rotation='00:00')
 
 - https://loguru.readthedocs.io/en/stable/api/logger.html
 - https://cuiqingcai.com/7776.html
+
+## 创建和判断inf、nan
+
+### 代码
+
+```python
+import math
+
+# 创建无穷大、负无穷大的浮点值
+a = float('inf')
+b = float('-inf')
+
+# 创建非数字的nan
+c = float('nan')
+
+print(a, b, c)
+
+# 判断inf、 -inf、 nan
+print(math.isinf(a))
+print(math.isinf(b))
+print(math.isnan(c))
+```
+
+### 相关链接
+
+- https://python3-cookbook.readthedocs.io/zh_CN/latest/c03/p07_infinity_and_nan.html
