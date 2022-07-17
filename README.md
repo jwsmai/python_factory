@@ -1,5 +1,11 @@
 # Python Factory
 
+## 使用[configparser](common/configparser_example.py)从配置文件获取参数
+
+相关链接：
+
+- https://python3-cookbook.readthedocs.io/zh_CN/latest/c13/p10_read_configuration_files.html
+
 ## 使用[getopt](common/getopt_example.py)从命令行获取参数
 
 ### Highline
@@ -102,5 +108,4 @@ print(math.isnan(c))
 ```
 
 ### 相关链接
-
 - https://python3-cookbook.readthedocs.io/zh_CN/latest/c03/p07_infinity_and_nan.html
