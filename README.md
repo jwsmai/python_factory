@@ -116,3 +116,17 @@ print(math.isnan(c))
 ### 相关链接
 
 - https://docs.databricks.com/dev-tools/python-sql-connector.html
+
+## 正则表达式
+
+### Highline
+
+#### re.findall(pattern, string, flags=0)
+
+返回string中所有与pattern匹配的全部字符串,返回形式为数组。
+
+```python
+import re
+
+print(re.findall("123", ""))
+```
