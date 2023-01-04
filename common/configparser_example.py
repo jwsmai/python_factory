@@ -13,10 +13,9 @@ server_hostname = cfg.get('databricks', 'server_hostname')
 print(server_hostname)
 print(type(server_hostname))
 
-workers = 8
 # 获取int型参数
 try:
-    workers = cfg.getint('server', 'nworkers')
+    workers = cfg.getint('server', 'workers')
 except NoOptionError as err:
     print(type(err).__name__)
 
