@@ -1,0 +1,15 @@
+2022-07-17 17:07:09.944 | DEBUG    | __main__:<module>:8 - this is a debug message to log/runtime.log
+2022-07-17 17:07:09.944 | ERROR    | __main__:<module>:20 - An error has been caught in function '<module>', process 'MainProcess' (14206), thread 'MainThread' (4311041408):
+Traceback (most recent call last):
+
+> File "/Users/suwenjin/Documents/GitWarehouse/python_factory/common/loguru_example.py", line 20, in <module>
+    my_function(1, -1, 0)
+    └ <function my_function at 0x115428790>
+
+  File "/Users/suwenjin/Documents/GitWarehouse/python_factory/common/loguru_example.py", line 17, in my_function
+    return 1 / (x + y + z)
+                │   │   └ 0
+                │   └ -1
+                └ 1
+
+ZeroDivisionError: division by zero
